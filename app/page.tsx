@@ -2,13 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { 
-  Flame, 
-  Target, 
-  Calendar, 
-  Sparkles, 
-  Zap, 
-  Star, 
+import {
+  Flame,
+  Target,
+  Calendar,
+  Sparkles,
+  Zap,
+  Star,
   ArrowRight,
   CheckCircle,
   Clock,
@@ -25,10 +25,10 @@ export default function Home() {
         {/* Large floating shapes */}
         <div className="absolute top-20 left-10 w-64 h-64 bg-[#FF7AC6] opacity-20 border-8 border-black rounded-full animate-float-slow" />
         <div className="absolute bottom-40 right-10 w-80 h-80 bg-[#8C6CFF] opacity-20 border-8 border-black rotate-12 animate-float-slower" />
-        <div className="absolute top-1/3 right-1/4 w-48 h-48 bg-[#FFD84D] opacity-20 border-8 border-black animate-spin-slow" 
-             style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)' }} />
+        <div className="absolute top-1/3 right-1/4 w-48 h-48 bg-[#FFD84D] opacity-20 border-8 border-black animate-spin-slow"
+          style={{ clipPath: 'polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)' }} />
         <div className="absolute bottom-1/4 left-1/4 w-56 h-56 bg-[#6DD3FF] opacity-20 border-8 border-black rounded-full animate-pulse-slow" />
-        
+
         {/* Floating patterns */}
         <div className="absolute top-40 left-1/3 text-[200px] text-black opacity-5 transform -rotate-12 select-none font-mono">
           {`{;}`}
@@ -36,22 +36,22 @@ export default function Home() {
         <div className="absolute bottom-40 right-1/3 text-[200px] text-black opacity-5 transform rotate-12 select-none">
           ✦ ✦ ✦
         </div>
-        
+
         {/* Grid pattern */}
         <div className="absolute inset-0 bg-[linear-gradient(45deg,black_2px,transparent_2px),linear-gradient(-45deg,black_1px,transparent_1px)] bg-[length:40px_40px] opacity-5" />
-        
+
         {/* Zig-zag lines */}
         <div className="absolute top-60 left-0 w-full h-8 bg-[linear-gradient(45deg,black_25%,transparent_25%),linear-gradient(-45deg,black_25%,transparent_25%)] bg-[length:20px_20px] opacity-10" />
         <div className="absolute bottom-60 left-0 w-full h-8 bg-[linear-gradient(45deg,black_25%,transparent_25%),linear-gradient(-45deg,black_25%,transparent_25%)] bg-[length:20px_20px] opacity-10 transform rotate-180" />
       </div>
 
       <main className="relative z-10 min-h-screen w-full max-w-6xl mx-auto py-20 px-6 sm:px-12">
-        
+
         {/* TOP BAR - Retro Computer Style */}
         <div className="relative mb-20">
           <div className="absolute -top-4 -left-4 w-20 h-20 bg-[#FF7AC6] border-4 border-black rounded-full animate-bounce-slow" />
           <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-[#8C6CFF] border-4 border-black rotate-12" />
-          
+
           <div className="relative border-8 border-black bg-white p-6 shadow-[16px_16px_0px_0px_#111111]">
             <div className="flex items-center justify-between">
               {/* Logo and Brand */}
@@ -63,7 +63,7 @@ export default function Home() {
                     <Flame className="w-10 h-10 text-black" />
                   </div>
                 </div>
-                
+
                 <div>
                   <h1 className="text-5xl font-black tracking-tighter">
                     <span className="bg-black text-white px-4 py-2 transform -rotate-1 inline-block mr-2">
@@ -80,12 +80,6 @@ export default function Home() {
                   </p>
                 </div>
               </div>
-
-              {/* Retro counter */}
-              <div className="border-4 border-black bg-black text-white p-4 font-mono">
-                <div className="text-xs opacity-75">VISITORS</div>
-                <div className="text-2xl font-black">0 0 4 2 0</div>
-              </div>
             </div>
           </div>
         </div>
@@ -93,7 +87,7 @@ export default function Home() {
         {/* HERO SECTION - Main Attraction */}
         <div className="relative mb-20">
           <div className="absolute -top-6 -right-6 w-32 h-32 bg-[#FFD84D] border-4 border-black rounded-full animate-ping-slow opacity-30" />
-          
+
           <div className="relative border-8 border-black bg-white p-12 shadow-[20px_20px_0px_0px_#111111]">
             <div className="max-w-3xl mx-auto text-center">
               {/* Hero badge */}
@@ -104,19 +98,19 @@ export default function Home() {
                   <Zap className="w-4 h-4" />
                 </span>
               </div>
-              
+
               <h2 className="text-7xl font-black leading-tight tracking-tighter mb-6">
                 BUILD BETTER
                 <span className="block bg-[linear-gradient(135deg,#FF7AC6,#8C6CFF,#6DD3FF)] bg-clip-text text-transparent">
                   HABITS
                 </span>
               </h2>
-              
+
               <p className="text-2xl font-bold mb-8 border-l-8 border-[#FF7AC6] pl-6 text-left">
-                One day at a time, with a splash of 90s nostalgia and 
+                One day at a time, with a splash of 90s nostalgia and
                 brutalist charm. Your daily routine never looked so rad!
               </p>
-              
+
               {/* CTA Buttons */}
               <div className="flex flex-col gap-4 pt-4 sm:flex-row justify-center">
                 <Link
@@ -130,7 +124,7 @@ export default function Home() {
                   <span className="absolute -top-3 -left-3 w-4 h-4 bg-[#FFD84D] border-3 border-black rotate-12" />
                   <span className="absolute -bottom-3 -right-3 w-4 h-4 bg-[#6DD3FF] border-3 border-black -rotate-12" />
                 </Link>
-                
+
                 <Link
                   href="/about"
                   className="border-4 border-black bg-white text-black font-black text-xl py-5 px-10 shadow-[8px_8px_0px_0px_#111111] hover:shadow-[4px_4px_0px_0px_#111111] hover:translate-x-[4px] hover:translate-y-[4px] transition-all flex items-center justify-center gap-2"
@@ -146,7 +140,7 @@ export default function Home() {
         {/* FEATURES GRID - Retro Cards */}
         <div className="relative mb-20">
           <div className="absolute -left-8 top-1/2 w-16 h-16 bg-[#7FFFD4] border-4 border-black rounded-full animate-bounce-slow" />
-          
+
           <h3 className="text-4xl font-black mb-12 text-center flex items-center justify-center gap-4">
             <span className="w-8 h-8 bg-[#FF7AC6] border-4 border-black transform rotate-45" />
             <span className="bg-black text-white px-6 py-3 transform -rotate-1">
@@ -154,19 +148,19 @@ export default function Home() {
             </span>
             <span className="w-8 h-8 bg-[#8C6CFF] border-4 border-black transform rotate-12" />
           </h3>
-          
+
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
             {/* Feature 1 */}
             <div className="group relative">
               <div className="absolute -inset-3 bg-[#FF7AC6] border-4 border-black rotate-1 opacity-0 group-hover:opacity-100 transition-opacity" />
-              
+
               <div className="relative border-4 border-black bg-white p-8 shadow-[10px_10px_0px_0px_#111111] group-hover:shadow-[6px_6px_0px_0px_#111111] group-hover:translate-x-[4px] group-hover:translate-y-[4px] transition-all">
                 <div className="text-5xl mb-4 border-4 border-black bg-[#FFD84D] w-20 h-20 flex items-center justify-center transform -rotate-3 group-hover:rotate-0 transition-transform">
                   📋
                 </div>
                 <h4 className="text-2xl font-black mb-3">CREATE ROUTINES</h4>
                 <p className="font-bold text-sm opacity-70">
-                  Build custom daily routines that work for your schedule, 
+                  Build custom daily routines that work for your schedule,
                   with a style that pops!
                 </p>
                 <div className="mt-4 flex gap-1">
@@ -180,14 +174,14 @@ export default function Home() {
             {/* Feature 2 */}
             <div className="group relative">
               <div className="absolute -inset-3 bg-[#8C6CFF] border-4 border-black rotate-1 opacity-0 group-hover:opacity-100 transition-opacity" />
-              
+
               <div className="relative border-4 border-black bg-white p-8 shadow-[10px_10px_0px_0px_#111111] group-hover:shadow-[6px_6px_0px_0px_#111111] group-hover:translate-x-[4px] group-hover:translate-y-[4px] transition-all">
                 <div className="text-5xl mb-4 border-4 border-black bg-[#6DD3FF] w-20 h-20 flex items-center justify-center transform rotate-3 group-hover:rotate-0 transition-transform">
                   📊
                 </div>
                 <h4 className="text-2xl font-black mb-3">TRACK PROGRESS</h4>
                 <p className="font-bold text-sm opacity-70">
-                  Monitor your consistency with colorful charts and 
+                  Monitor your consistency with colorful charts and
                   watch your streaks grow!
                 </p>
                 <div className="mt-4 flex gap-1">
@@ -201,14 +195,14 @@ export default function Home() {
             {/* Feature 3 */}
             <div className="group relative">
               <div className="absolute -inset-3 bg-[#FFD84D] border-4 border-black rotate-1 opacity-0 group-hover:opacity-100 transition-opacity" />
-              
+
               <div className="relative border-4 border-black bg-white p-8 shadow-[10px_10px_0px_0px_#111111] group-hover:shadow-[6px_6px_0px_0px_#111111] group-hover:translate-x-[4px] group-hover:translate-y-[4px] transition-all">
                 <div className="text-5xl mb-4 border-4 border-black bg-[#7FFFD4] w-20 h-20 flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform">
                   🎯
                 </div>
                 <h4 className="text-2xl font-black mb-3">ACHIEVE GOALS</h4>
                 <p className="font-bold text-sm opacity-70">
-                  Turn your daily habits into long-term success with 
+                  Turn your daily habits into long-term success with
                   our rad tracking system!
                 </p>
                 <div className="mt-4 flex gap-1">
@@ -221,86 +215,10 @@ export default function Home() {
           </div>
         </div>
 
-        {/* STATS BANNER */}
-        <div className="relative mb-20">
-          <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-32 h-8 bg-[linear-gradient(45deg,black_25%,transparent_25%),linear-gradient(-45deg,black_25%,transparent_25%)] bg-[length:8px_8px] border-4 border-black" />
-          
-          <div className="border-8 border-black bg-[linear-gradient(135deg,#FF7AC6,#8C6CFF)] p-10 shadow-[16px_16px_0px_0px_#111111]">
-            <div className="grid grid-cols-1 sm:grid-cols-4 gap-8">
-              {[
-                { label: 'ACTIVE USERS', value: '10K+', icon: Coffee },
-                { label: 'HABITS LOGGED', value: '1M+', icon: CheckCircle },
-                { label: 'STREAKS', value: '50K+', icon: Flame },
-                { label: 'COUNTRIES', value: '42', icon: TrendingUp }
-              ].map((stat, index) => {
-                const Icon = stat.icon
-                return (
-                  <div key={index} className="text-center">
-                    <Icon className="w-8 h-8 mx-auto mb-3 text-black" />
-                    <div className="font-black text-4xl text-black">{stat.value}</div>
-                    <div className="font-bold text-sm text-black/70">{stat.label}</div>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
-        </div>
 
-        {/* FINAL CTA */}
-        <div className="relative">
-          <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-[#FFD84D] border-4 border-black rounded-full animate-pulse-slow" />
-          
-          <div className="relative border-8 border-black bg-white p-12 shadow-[20px_20px_0px_0px_#111111] text-center">
-            <h3 className="text-5xl font-black mb-6">
-              READY TO START YOUR
-              <span className="block text-[#FF7AC6]">90s PRODUCTIVITY JOURNEY?</span>
-            </h3>
-            
-            <p className="text-xl font-bold mb-8 max-w-2xl mx-auto">
-              Join thousands of users who've transformed their daily routines 
-              with a splash of nostalgia and brutalist charm.
-            </p>
-            
-            <Link
-              href="/signup"
-              className="group relative inline-block border-4 border-black bg-[#8C6CFF] text-black font-black text-2xl py-6 px-16 shadow-[12px_12px_0px_0px_#111111] hover:shadow-[6px_6px_0px_0px_#111111] hover:translate-x-[6px] hover:translate-y-[6px] transition-all"
-            >
-              <span className="flex items-center gap-3">
-                SIGN UP NOW — IT'S FREE!
-                <Rocket className="w-8 h-8 group-hover:translate-x-1 transition-transform" />
-              </span>
-              <span className="absolute -top-4 -left-4 w-5 h-5 bg-[#FF7AC6] border-3 border-black rotate-12" />
-              <span className="absolute -bottom-4 -right-4 w-5 h-5 bg-[#6DD3FF] border-3 border-black -rotate-12" />
-            </Link>
-          </div>
-        </div>
 
-        {/* FOOTER */}
-        <div className="relative mt-20">
-          <div className="border-t-4 border-black pt-8">
-            <div className="flex flex-col sm:flex-row justify-between items-center gap-4">
-              <div className="flex items-center gap-2">
-                <Flame className="w-5 h-5 text-[#FF7AC6]" />
-                <span className="font-black">DAILYROUTINE</span>
-                <span className="text-xs border-2 border-black px-2 py-1 bg-[#FFD84D] font-bold">
-                  v2.0
-                </span>
-              </div>
-              
-              <div className="flex gap-6 font-bold text-sm">
-                <Link href="/privacy" className="hover:text-[#FF7AC6] transition-colors">PRIVACY</Link>
-                <Link href="/terms" className="hover:text-[#8C6CFF] transition-colors">TERMS</Link>
-                <Link href="/contact" className="hover:text-[#6DD3FF] transition-colors">CONTACT</Link>
-              </div>
-              
-              <p className="text-xs font-mono opacity-50 flex items-center gap-2">
-                <span>© 2024</span>
-                <span className="w-1 h-1 bg-black rounded-full" />
-                <span>MADE WITH ☕ & 90s VIBES</span>
-              </p>
-            </div>
-          </div>
-        </div>
+
+
       </main>
 
       <style jsx>{`
