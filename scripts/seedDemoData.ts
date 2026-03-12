@@ -4,11 +4,11 @@ import path from "path"
 import fs from "fs"
 import { fileURLToPath } from "url"
 
-// Import your models
-import Journal from "../models/Journal.ts"
-import HabitLog from "../models/HabitLog.ts"
-import Habit from "../models/Habit.ts"
-import User from "../models/User.ts"
+// Import your models - WITHOUT the .ts extension
+import Journal from "../models/Journal"
+import HabitLog from "../models/HabitLog"
+import Habit from "../models/Habit"
+import User from "../models/User"
 
 // Get __dirname equivalent in ES modules
 const __filename = fileURLToPath(import.meta.url)
