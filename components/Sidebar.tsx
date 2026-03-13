@@ -23,6 +23,7 @@ export default function Sidebar() {
     { name: "Habits", href: "/habits", icon: Target, color: "#FFD84D" },
     { name: "Journal", href: "/journal", icon: BookOpen, color: "#7FFFD4" },
     { name: "History", href: "/history", icon: History, color: "#6DD3FF" },
+    { name: "Journal History", href: "/journal/history", icon: History, color: "#FF7AC6" },
   ]
 
   const isActive = (href: string) => pathname === href
